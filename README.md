@@ -1,67 +1,21 @@
 
 <div align="center">
 
-  <img src="assets/logo.png" alt="logo" width="200" height="auto" />
   <h1>ArgoCD for Continuous Deployment</h1>
   
   <p>
     Argo CD for continuous deployment and Argo Rollouts for advanced deployment strategies within a Kubernetes environment! 
   </p>
   
-  
-<!-- Badges -->
-<p>
-  <a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/Louis3797/awesome-readme-template" alt="contributors" />
-  </a>
-  <a href="">
-    <img src="https://img.shields.io/github/last-commit/Louis3797/awesome-readme-template" alt="last update" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/network/members">
-    <img src="https://img.shields.io/github/forks/Louis3797/awesome-readme-template" alt="forks" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/stargazers">
-    <img src="https://img.shields.io/github/stars/Louis3797/awesome-readme-template" alt="stars" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/issues/">
-    <img src="https://img.shields.io/github/issues/Louis3797/awesome-readme-template" alt="open issues" />
-  </a>
-  <a href="https://github.com/Louis3797/awesome-readme-template/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/Louis3797/awesome-readme-template.svg" alt="license" />
-  </a>
-</p>
-   
-<h4>
-    <a href="https://github.com/Louis3797/awesome-readme-template/">View Demo</a>
-  <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template">Documentation</a>
-  <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Report Bug</a>
-  <span> · </span>
-    <a href="https://github.com/Louis3797/awesome-readme-template/issues/">Request Feature</a>
-  </h4>
-</div>
-
 <br />
-
+</div>
 <!-- Table of Contents -->
 # :notebook_with_decorative_cover: Table of Contents
 
-- [About the Project](#star2-about-the-project)
-  * [Screenshots](#camera-screenshots)
-  * [Tech Stack](#space_invader-tech-stack)
-  * [Features](#dart-features)
-  * [Color Reference](#art-color-reference)
-  * [Environment Variables](#key-environment-variables)
+- About the Project
 - [Getting Started](#toolbox-getting-started)
   * [Prerequisites](#bangbang-prerequisites)
-  * [Installation](#gear-installation)
-  * [Running Tests](#test_tube-running-tests)
-  * [Run Locally](#running-run-locally)
-  * [Deployment](#triangular_flag_on_post-deployment)
-- [Usage](#eyes-usage)
-- [Roadmap](#compass-roadmap)
-- [Contributing](#wave-contributing)
+  * [Steps](#gear-installation)
   * [Code of Conduct](#scroll-code-of-conduct)
 - [FAQ](#grey_question-faq)
 - [License](#warning-license)
@@ -79,104 +33,35 @@ In Task 1, a GitHub repository is created to host the source code, and Argo CD i
 Task 2 focuses on creating the GitOps pipeline by Dockerizing the chosen web application, pushing the Docker image to a public registry, and configuring Argo CD to automatically deploy changes to the Kubernetes cluster based on the repository changes. <br>
 Finally, Task 3 implements a canary release strategy using Argo Rollouts by defining rollout strategies, triggering a rollout with updated Docker images, and monitoring the deployment process to ensure the success of the canary release.<br>
 ### ArgoCD
-<div align="center"> 
-  <img src="https://placehold.co/200x200?text=Your+Screenshot+here" alt="screenshot" />
-</div>
+
+  ![download](https://github.com/20Ansh02/Devops-Ai-Planet-Project/assets/83866039/8cb8b8cc-a1de-43c4-96ba-a8f455cabb97)
+
 Argo CD is a Kubernetes-native, open-source, continuous delivery (CD) tool that uses Git repositories to define application states and automate their deployment. Argo CD can manage both infrastructure configuration and application updates in one system.
 
 ### Docker
-<div align="center"> 
-  <img src="https://placehold.co/200x200?text=Your+Screenshot+here" alt="screenshot" />
-</div>
-Docker revolutionized software development by popularizing containerization, a lightweight and efficient way to package applications and their dependencies. With Docker, developers can encapsulate their applications and run them consistently across different environments, from development to production. Docker containers provide isolation, ensuring that applications run predictably regardless of the environment they are deployed in. Docker's ease of use, portability, and scalability have made it a cornerstone technology in modern software development and deployment pipelines. Its impact extends beyond development, influencing practices like microservices architecture, continuous integration and deployment (CI/CD), and DevOps. As a result, Docker has become an essential tool for developers, enabling them to build, ship, and run applications more efficiently and reliably.
+
+![images](https://github.com/20Ansh02/Devops-Ai-Planet-Project/assets/83866039/00c8c3ab-2dc9-4ebf-b318-3e9653c46a69)
+
+Docker revolutionized software development by popularizing containerization, a lightweight and efficient way to package applications and their dependencies. With Docker, developers can encapsulate their applications and run them consistently across different environments, from development to production. Docker containers provide isolation, ensuring that applications run predictably regardless of the environment they are deployed. Docker's ease of use, portability, and scalability have made it a cornerstone technology in modern software development and deployment pipelines. Its impact extends beyond development, influencing practices like microservices architecture, continuous integration and deployment (CI/CD), and DevOps. As a result, Docker has become an essential tool for developers, enabling them to build, ship, and run applications more efficiently and reliably.
 
 ### Kubernetes
-<div align="center"> 
-  <img src="https://placehold.co/200x200?text=Your+Screenshot+here" alt="screenshot" />
-</div>
+
+![3-31510_svg-kubernetes-logo-hd-png-download](https://github.com/20Ansh02/Devops-Ai-Planet-Project/assets/83866039/42bae3fd-a414-40da-94ef-d114c93505d4)
+
 Kubernetes, often abbreviated as K8s, is an open-source container orchestration platform designed to automate the deployment, scaling, and management of containerized applications. Originally developed by Google and now maintained by the Cloud Native Computing Foundation (CNCF), Kubernetes has become the de facto standard for managing containerized workloads in cloud-native environments. Kubernetes abstracts away the underlying infrastructure, providing a unified API to manage clusters of hosts and the containers running on them. It offers features such as automatic scaling, rolling updates, service discovery, load balancing, and self-healing capabilities, enabling developers to focus on building applications without worrying about the underlying infrastructure complexities. Kubernetes promotes scalability, resilience, and portability, allowing applications to run consistently across diverse environments, from on-premises data centers to public and hybrid clouds. Its rich ecosystem of tools and integrations, combined with its flexibility and robustness, makes Kubernetes indispensable for modern containerized application development and deployment.
-
-<!-- Screenshots -->
-### :camera: Screenshots
-
-<div align="center"> 
-  <img src="https://placehold.co/100x100?text=Your+Screenshot+here" alt="screenshot" />
-</div>
-
 
 <!-- TechStack -->
 ### :space_invader: Tech Stack
 
 <details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://nextjs.org/">Next.js</a></li>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-    <li><a href="https://go.dev/">Golang</a></li>
-    <li><a href="https://nestjs.com/">Nest.js</a></li>
-    <li><a href="https://socket.io/">SocketIO</a></li>
-    <li><a href="https://www.prisma.io/">Prisma</a></li>    
-    <li><a href="https://www.apollographql.com/">Apollo</a></li>
-    <li><a href="https://graphql.org/">GraphQL</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.mysql.com/">MySQL</a></li>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-    <li><a href="https://redis.io/">Redis</a></li>
-    <li><a href="https://neo4j.com/">Neo4j</a></li>
-    <li><a href="https://www.mongodb.com/">MongoDB</a></li>
-  </ul>
-</details>
-
-<details>
 <summary>DevOps</summary>
   <ul>
     <li><a href="https://www.docker.com/">Docker</a></li>
-    <li><a href="https://www.jenkins.io/">Jenkins</a></li>
-    <li><a href="https://circleci.com/">CircleCLI</a></li>
+    <li><a href="https://www.kubernetes.com/">Kubernetes</a></li>
+    <li><a href="https://argocd.com/">Argocd</a></li>
   </ul>
 </details>
 
-<!-- Features -->
-### :dart: Features
-
-- Feature 1
-- Feature 2
-- Feature 3
-
-<!-- Color Reference -->
-### :art: Color Reference
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Primary Color | ![#222831](https://via.placeholder.com/10/222831?text=+) #222831 |
-| Secondary Color | ![#393E46](https://via.placeholder.com/10/393E46?text=+) #393E46 |
-| Accent Color | ![#00ADB5](https://via.placeholder.com/10/00ADB5?text=+) #00ADB5 |
-| Text Color | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
-
-
-<!-- Env Variables -->
-### :key: Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-
-`API_KEY`
-
-`ANOTHER_API_KEY`
 
 <!-- Getting Started -->
 ## 	:toolbox: Getting Started
@@ -229,7 +114,6 @@ Install Kubctl
 
 ```
 $ curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl &&   chmod +x ./kubectl && sudo mv ./kubectl /usr/local/bin/kubectl
-
 $ sudo chmod +x /usr/local/bin/kubectl
 $ ls -l /usr/local/bin/kubectl
 $ kubectl version --short
@@ -287,7 +171,6 @@ $ docker --version
 #### Install Kubectl
 ```
 $ curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl &&   chmod +x ./kubectl && sudo mv ./kubectl /usr/local/bin/kubectl
-
 $ sudo chmod +x /usr/local/bin/kubectl
 $ ls -l /usr/local/bin/kubectl
 $ kubectl version --short
@@ -311,7 +194,6 @@ $ minikube version
 ```
 $ kubectl cluster-info
 $ minikube start
-
 $ kubectl cluster-info
 ```
 
@@ -401,7 +283,6 @@ brew install argoproj/tap/kubectl-argo-rollouts
 
 ```
 kubectl create ns ai-planet-demo
-
 ```
 ### 🔹STEP-3
 Created Deployment.yaml and Service.yaml - NodePort inside deployment folder
@@ -411,7 +292,6 @@ Change default admin password
 
 ```
 argocd account update-password
-
 ```
 ### 🔹STEP-5
 Created a project on argocd named ai-planet-demo 
@@ -479,8 +359,6 @@ kubectl argo rollouts get rollout ai-planet-demo-rollout -n ai-planet-demo --wat
 
 ```
 kubectl argo rollouts get rollout ai-planet-demo-rollout -n ai-planet-demo --watch
-
-
 ```
 
 👉 First only set to 20% trafic and waits for operator approval
@@ -532,115 +410,22 @@ minikube delete
 
 
 
-<!-- Run Locally -->
-### :running: Run Locally
+<!-- Challenges -->
+### Challenges Faced
 
-Clone the project
+#### Challenge 1:
+👉 Facing issue regarding Port Forwarding
+was showing this error
+![WhatsApp Image 2024-04-23 at 17 33 22_82af64cf](https://github.com/20Ansh02/Devops-Ai-Planet-Project/assets/83866039/1a4f6bbf-edf5-4866-8535-b0b27b035135)
 
-```bash
-  git clone https://github.com/Louis3797/awesome-readme-template.git
+👉 Solved using 
+```
+kubectl port-forward svc/ardocd-server -n argocd --address 0.0.0.0 8080:443
 ```
 
-Go to the project directory
-
-```bash
-  cd my-project
-```
-
-Install dependencies
-
-```bash
-  yarn install
-```
-
-Start the server
-
-```bash
-  yarn start
-```
-
-
-<!-- Deployment -->
-### :triangular_flag_on_post: Deployment
-
-To deploy this project run
-
-```bash
-  yarn deploy
-```
-
-
-<!-- Usage -->
-## :eyes: Usage
-
-Use this space to tell a little more about your project and how it can be used. Show additional screenshots, code samples, demos or link to other resources.
-
-
-```javascript
-import Component from 'my-project'
-
-function App() {
-  return <Component />
-}
-```
-
-<!-- Roadmap -->
-## :compass: Roadmap
-
-* [x] Todo 1
-* [ ] Todo 2
-
-
-<!-- Contributing -->
-## :wave: Contributing
-
-<a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" />
-</a>
-
+#### Challenge 2:
+ 👉 Unable to run amd64 version on mac m2 requiring arm64 image
+ 👉 Fix:- added platform: arm64 to github actions main.yml file on build and push docker image step
+ 
 
 Contributions are always welcome!
-
-See `contributing.md` for ways to get started.
-
-
-<!-- Code of Conduct -->
-### :scroll: Code of Conduct
-
-Please read the [Code of Conduct](https://github.com/Louis3797/awesome-readme-template/blob/master/CODE_OF_CONDUCT.md)
-
-<!-- FAQ -->
-## :grey_question: FAQ
-
-- Question 1
-
-  + Answer 1
-
-- Question 2
-
-  + Answer 2
-
-
-<!-- License -->
-## :warning: License
-
-Distributed under the no License. See LICENSE.txt for more information.
-
-
-<!-- Contact -->
-## :handshake: Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/Louis3797/awesome-readme-template](https://github.com/Louis3797/awesome-readme-template)
-
-
-<!-- Acknowledgments -->
-## :gem: Acknowledgements
-
-Use this section to mention useful resources and libraries that you have used in your projects.
-
- - [Shields.io](https://shields.io/)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#travel--places)
- - [Readme Template](https://github.com/othneildrew/Best-README-Template)
